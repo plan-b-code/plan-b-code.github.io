@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brian Woods | Plan B Code</title>
+  <meta name="description" content="Brian Woods — contractor, coder, late-bloomer builder. Ocala, FL. Creator of Grind & Code." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-bracket">{</span>
+        <span class="nav__logo-text">plan-b-code</span>
+        <span class="nav__logo-bracket">}</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#grind-and-code">The Show</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#the-build">The Build</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <div class="hero__tag">
+        <span class="tag-dot"></span>
+        Currently in Production
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Construction</span>
+        <span class="hero__title-line hero__title-line--accent">by day.</span>
+        <span class="hero__title-line">Code</span>
+        <span class="hero__title-line hero__title-line--accent">by night.</span>
+      </h1>
+      <p class="hero__sub">
+        I'm <strong>Brian Woods</strong> — contractor, late-bloomer developer, and creator of
+        <em>Grind &amp; Code</em>. Based in Ocala, FL. Building software for the people who build everything else.
+      </p>
+      <div class="hero__cta-group">
+        <a href="#grind-and-code" class="btn btn--primary">Watch the Story</a>
+        <a href="#the-build" class="btn btn--ghost">See What I'm Building</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">8</span>
+          <span class="stat__label">Episodes Scripted</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">1</span>
+          <span class="stat__label">MVP in Progress</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">∞</span>
+          <span class="stat__label">Reasons to Keep Going</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__code-block">
+      <div class="code-window">
+        <div class="code-window__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="code-window__title">grind_and_code.py</span>
+        </div>
+        <pre class="code-window__body"><code><span class="c"># Late 40s. Ocala, FL.</span>
+<span class="c"># Three kids. One dream.</span>
+
+<span class="k">def</span> <span class="fn">late_bloomer</span>(age, skills):
+    <span class="s">"""
+    It's never too late to
+    rewrite your story.
+    """</span>
+    <span class="k">if</span> age &gt; <span class="n">40</span>:
+        <span class="k">return</span> <span class="s">"advantage"</span>
+    <span class="k">return</span> <span class="s">"still learning"</span>
+
+brian = {
+    <span class="s">"name"</span>: <span class="s">"Brian Woods"</span>,
+    <span class="s">"location"</span>: <span class="s">"Ocala, FL"</span>,
+    <span class="s">"stack"</span>: [<span class="s">"Python"</span>, <span class="s">"AI"</span>],
+    <span class="s">"status"</span>: <span class="s">"building"</span>
+}
+
+<span class="fn">late_bloomer</span>(brian[<span class="s">"age"</span>], brian[<span class="s">"stack"</span>])
+<span class="c"># → "advantage"</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">// about</span>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section-title">The Midlife Rewrite</h2>
+          <p>
+            Most people come to Ocala for the horses and the quiet life. I came here when I ran out of
+            appealing options. I've spent years in construction — getting my hands dirty, and breaking down
+            my body. That work keeps the lights on, and gets me out of bed before it's light outside.
+          </p>
+          <p>
+            But a few years ago, something shifted. I started seeing the gaps — the places where small
+            contractors like me were losing time, money, and sanity to broken systems and paper trails.
+            So I started learning to code. Not because it was easy. Because it was necessary.
+          </p>
+          <p>
+            Now I'm in my late 40s, studying software and AI engineering, raising a blended family, running
+            a business, and building a tool I wish had existed years ago. Some people call it a midlife crisis.
+            I call it a <strong>midlife rewrite</strong>.
+          </p>
+          <div class="about__tags">
+            <span class="tag">Python</span>
+            <span class="tag">AI / ML</span>
+            <span class="tag">Construction Tech</span>
+            <span class="tag">Ocala, FL</span>
+            <span class="tag">Late Bloomer</span>
+            <span class="tag">Prime Standard Solutions</span>
+          </div>
+        </div>
+        <div class="about__cards">
+          <div class="info-card">
+            <div class="info-card__icon">🔨</div>
+            <h3>The Contractor</h3>
+            <p>Years of tile, remodels, and full renovations. Every job is research for the software I'm building.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon">💻</div>
+            <h3>The Coder</h3>
+            <p>Late-night Python sessions, AI engineering coursework, and an MVP that barely works — but exists.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon">👨‍👧‍👧</div>
+            <h3>The Father</h3>
+            <p>Three kids, Catholic school tuition, a toddler on the keyboard, and a wife holding it all together.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon">🚀</div>
+            <h3>The Builder</h3>
+            <p>One "I'd pay for it" from a real contractor after 40-something years of grinding? That hits different.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GRIND AND CODE SHOW ===== -->
+  <section class="show section" id="grind-and-code">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">// the show</span>
+      </div>
+      <div class="show__header">
+        <div>
+          <h2 class="section-title">Grind &amp; Code</h2>
+          <p class="show__subtitle">A Pseudo-Reality TV Show — Currently in Production</p>
+        </div>
+        <div class="show__badge">
+          <span class="badge-pulse"></span>
+          In Production
+        </div>
+      </div>
+
+      <div class="show__overview">
+        <div class="show__meta-grid">
+          <div class="meta-item">
+            <span class="meta-item__label">Format</span>
+            <span class="meta-item__value">30-min Episodic Reality–Drama Hybrid</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-item__label">Setting</span>
+            <span class="meta-item__value">Ocala, Florida</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-item__label">Tone</span>
+            <span class="meta-item__value">Late-bloomer hustle, family chaos, small-town grind</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-item__label">Episodes</span>
+            <span class="meta-item__value">8-Episode Season Arc</span>
+          </div>
+        </div>
+
+        <blockquote class="show__quote">
+          "Some people call it a midlife crisis. I call it a midlife rewrite."
+          <cite>— Brian (as Jordan), Pilot Episode</cite>
+        </blockquote>
+
+        <p class="show__description">
+          <em>Grind &amp; Code</em> follows a man in his late 40s navigating the collision of construction work,
+          family life, and an ambitious pivot into software development. Set against the backdrop of Ocala, Florida,
+          the show captures the raw, unfiltered reality of building something new when the stakes — school tuition,
+          a toddler, a blended family, a real business — are as high as they've ever been.
+        </p>
+        <p class="show__description">
+          This isn't a story about a twenty-something with a laptop and a dream. It's about someone who knows
+          the problem better than any founder because he's lived it. Every tile job is market research. Every
+          late-night coding session is a bet on the future.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EPISODES ===== -->
+  <section class="episodes section" id="episodes">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">// season one</span>
+      </div>
+      <h2 class="section-title">Episode Arc</h2>
+
+      <div class="episodes__grid">
+
+        <div class="episode-card episode-card--pilot">
+          <div class="episode-card__num">S1 · E1</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"The Setup"</h3>
+            <p class="episode-card__desc">
+              Cold open on chaos: a toddler screaming, a wife on a customer service call, two girls in Catholic
+              school uniforms rushing out the door. Brian introduces himself, his family, his construction business,
+              and the software dream he refuses to let go of.
+            </p>
+            <span class="episode-card__tag">Pilot</span>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-card__num">S1 · E2</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"First Customer, First Meltdown"</h3>
+            <p class="episode-card__desc">
+              Brian lands his first paying user while the toddler has a nuclear-level tantrum, and a school email
+              about tuition adds pressure to an already volatile day.
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-card__num">S1 · E3</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"Sleep Debt"</h3>
+            <p class="episode-card__desc">
+              Sleep deprivation hits hard. Brian pushes through a string of late-night coding sessions while
+              helping with projects for the Catholic school.
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-card__num">S1 · E4</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"Old Body, New Skills"</h3>
+            <p class="episode-card__desc">
+              A minor injury on a job site makes Brian confront aging and long-term sustainability.
+              Software becomes even more urgent.
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-card__num">S1 · E5</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"Shared Desk, Shared Dreams"</h3>
+            <p class="episode-card__desc">
+              Tension and teamwork as Brian and his wife share a cramped home workspace. They revisit what
+              they're really building — for the family.
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-card__num">S1 · E6</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"Lines in the Tile"</h3>
+            <p class="episode-card__desc">
+              A big renovation job runs into problems just as a critical bug hits the app. Brian must choose
+              which fire to fight first.
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-card__num">S1 · E7</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"Local Buzz"</h3>
+            <p class="episode-card__desc">
+              Word of the software spreads among local contractors. Brian speaks at the girls' Catholic school
+              tech night, surprising himself.
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-card episode-card--finale">
+          <div class="episode-card__num">S1 · E8</div>
+          <div class="episode-card__content">
+            <h3 class="episode-card__title">"Late Start, Long Game"</h3>
+            <p class="episode-card__desc">
+              Season finale. More customers, still chaos, but a clearer sense of direction. What does progress
+              really look like at this stage of life?
+            </p>
+            <span class="episode-card__tag episode-card__tag--finale">Season Finale</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE BUILD ===== -->
+  <section class="build section" id="the-build">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">// the software</span>
+      </div>
+      <div class="build__grid">
+        <div class="build__text">
+          <h2 class="section-title">The Contractor Tool</h2>
+          <p>
+            Every tile job, every renovation, every invoice chased down at midnight — it all pointed to the
+            same gap. Small contractors don't have tools built for them. They have spreadsheets, text messages,
+            and memory.
+          </p>
+          <p>
+            I'm building a contractor management platform from the inside out — scheduling, job tracking,
+            materials, invoicing, all-in-one. Built by someone who's lived the problem.
+          </p>
+          <div class="build__features">
+            <div class="feature">
+              <span class="feature__icon">📋</span>
+              <div>
+                <strong>Job Scheduling</strong>
+                <p>Track every job, crew, and timeline in one place.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🧱</span>
+              <div>
+                <strong>Materials Tracking</strong>
+                <p>Know exactly what tile, supplies, and tools went where.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🧾</span>
+              <div>
+                <strong>Invoicing</strong>
+                <p>Generate and send invoices without the paper chase.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">📱</span>
+              <div>
+                <strong>Mobile-First</strong>
+                <p>Built for people on job sites, not just desks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="build__status">
+          <div class="status-card">
+            <div class="status-card__header">
+              <span class="status-dot status-dot--active"></span>
+              <span>Build Status</span>
+            </div>
+            <div class="status-card__body">
+              <div class="progress-item">
+                <div class="progress-item__label">
+                  <span>MVP Core</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-item__label">
+                  <span>Job Scheduling</span>
+                  <span>60%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-item__label">
+                  <span>Invoicing Module</span>
+                  <span>40%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width: 40%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-item__label">
+                  <span>Mobile App</span>
+                  <span>15%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width: 15%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="status-card__footer">
+              <span class="status-tag">Python</span>
+              <span class="status-tag">AI-Assisted</span>
+              <span class="status-tag">In Dev</span>
+            </div>
+          </div>
+          <blockquote class="build__quote">
+            "If you get this where you're saying… I'd use it. I'd pay for it."
+            <cite>— Local Contractor, First Demo</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONNECT ===== -->
+  <section class="connect section" id="connect">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">// connect</span>
+      </div>
+      <div class="connect__inner">
+        <h2 class="section-title">Same Time Tomorrow.</h2>
+        <p class="connect__sub">More code. More noise. More grind.</p>
+        <p class="connect__desc">
+          Whether you're a contractor who needs better tools, a creator who wants to follow the journey,
+          or just someone who believes it's never too late to start — let's connect.
+        </p>
+        <div class="connect__links">
+          <a href="https://github.com/plan-b-code" target="_blank" rel="noopener" class="connect-link">
+            <svg class="connect-link__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.threads.com/@plan2bw00ds" target="_blank" rel="noopener" class="connect-link">
+            <svg class="connect-link__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 012.535.145c-.03-.966-.265-1.713-.704-2.236-.499-.593-1.261-.898-2.364-.914l-.033-.001c-.876 0-2.057.244-2.832 1.176l-1.584-1.32c1.131-1.36 2.823-2.108 4.424-2.108h.048c3.513.052 5.591 2.168 5.68 5.817.02.765.003 1.498-.05 2.196.76.557 1.37 1.26 1.802 2.22.943 2.158.975 5.049-1.497 7.448-1.87 1.826-4.13 2.685-7.233 2.707z"/>
+            </svg>
+            Threads
+          </a>
+          <a href="https://primestandardsolutions.com" target="_blank" rel="noopener" class="connect-link">
+            <svg class="connect-link__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            Prime Standard Solutions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo-bracket">{</span>
+          <span>plan-b-code</span>
+          <span class="nav__logo-bracket">}</span>
+        </div>
+        <p class="footer__copy">
+          &copy; 2026 Brian Woods · Ocala, FL ·
+          <a href="https://brianmwoods.me">brianmwoods.me</a>
+        </p>
+        <p class="footer__tagline">Late start. Long game.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
