@@ -74,6 +74,46 @@ const progressObserver = new IntersectionObserver((entries) => {
 const statusCard = document.querySelector('.status-card');
 if (statusCard) progressObserver.observe(statusCard);
 
+// ---- Background Audio Toggle ----
+const bgm         = document.getElementById('bgm');
+const audioToggle = document.getElementById('audioToggle');
+const iconOn      = audioToggle.querySelector('.audio-icon--on');
+const iconOff     = audioToggle.querySelector('.audio-icon--off');
+
+let audioStarted = false;
+
+function startAudio() {
+  if (!audioStarted) {
+    bgm.volume = 0.35;
+    bgm.play().catch(() => {});
+    audioStarted = true;
+  }
+}
+
+// Start on first user interaction (browser autoplay policy)
+['click', 'scroll', 'keydown', 'touchstart'].forEach(evt => {
+  document.addEventListener(evt, startAudio, { once: true, passive: true });
+});
+
+audioToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (!audioStarted) {
+    startAudio();
+    return;
+  }
+  if (bgm.paused) {
+    bgm.play().catch(() => {});
+    iconOn.style.display  = '';
+    iconOff.style.display = 'none';
+    audioToggle.classList.remove('muted');
+  } else {
+    bgm.pause();
+    iconOn.style.display  = 'none';
+    iconOff.style.display = '';
+    audioToggle.classList.add('muted');
+  }
+});
+
 // ---- Active nav link on scroll ----
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav__links a[href^="#"]');
