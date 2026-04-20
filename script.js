@@ -80,19 +80,34 @@ const audioToggle = document.getElementById('audioToggle');
 const iconOn      = audioToggle.querySelector('.audio-icon--on');
 const iconOff     = audioToggle.querySelector('.audio-icon--off');
 
+// Default state: ON — music plays as soon as browser allows
+bgm.volume = 0.35;
 let audioStarted = false;
 
 function startAudio() {
   if (!audioStarted) {
-    bgm.volume = 0.35;
     bgm.play().catch(() => {});
     audioStarted = true;
+    // Show ON icon (music is playing)
+    iconOn.style.display  = '';
+    iconOff.style.display = 'none';
+    audioToggle.classList.remove('muted');
   }
 }
 
-// Start on first user interaction (browser autoplay policy)
+// Auto-start on first user interaction (browser autoplay policy)
 ['click', 'scroll', 'keydown', 'touchstart'].forEach(evt => {
   document.addEventListener(evt, startAudio, { once: true, passive: true });
+});
+
+// Also attempt immediate autoplay (works in some browsers)
+bgm.play().then(() => {
+  audioStarted = true;
+  iconOn.style.display  = '';
+  iconOff.style.display = 'none';
+  audioToggle.classList.remove('muted');
+}).catch(() => {
+  // Blocked by browser — will start on first interaction instead
 });
 
 audioToggle.addEventListener('click', (e) => {
